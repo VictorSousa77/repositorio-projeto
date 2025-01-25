@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Roupas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Loja de Roupas</h1>
+    <nav>
+      <button id="load-products"> <a href="pexels-cottonbro-4066288.jpg">produtos</a> </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção para exibir produtos -->
+    <section id="produtos" class="produtos"></section>
+
+    <!-- Formulário dinâmico -->
+    <section class="form-section">
+      <h2>Fale Conosco</h2>
+      <form id="form-contato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="mensagem-sucesso" class="hidden">Mensagem enviada com sucesso!</div>
+    </section>
+  </main>
+
+   
+
+  <script src="script.js"></script>
+</body>
+</html>
